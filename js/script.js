@@ -79,8 +79,22 @@ $(document).ready(function(){
 		autoplayHoverPause: true,
 		loop: true,
 	});	
+
 	var caro2 = $("#caro-2");
 	caro2.owlCarousel({
+		autoplay: true,
+		margin: 30,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		dots: true,
+		loop: true,
+		nav: true,
+		navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
+		items : 2,
+	});
+
+	var caro3 = $("#caro-3");
+	caro3.owlCarousel({
 		autoplay: true,
 		margin: 30,
 		autoplayTimeout: 5000,

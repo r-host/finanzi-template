@@ -44,15 +44,7 @@
 		padding-bottom: 40px; 
 	}
 }
-/*.banner-page:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: rgba($font__body-color, .5);
-}*/
+
 /* 6.1 - About */
 .banner-page.about{
 	background: url('../images/banner-page.jpg') bottom center no-repeat;
@@ -668,6 +660,27 @@ dl.hiw{
 	    opacity: .2;
     }
 }
+.bg-overlay-4{
+    background: url(../images/bgoverlay-4.jpg) bottom right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  	&:before{
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-color: $white;
+	    opacity: .3;
+    }
+}
+.bg-1{
+	background-color: $color_1;
+}
+.bg-2{
+	background-color: $color_2;
+}
 
 .pd30{
 	padding: 30px 0;
@@ -753,6 +766,44 @@ dl.hiw{
 			right: -70px;
 		}
 	}
+}
+
+.testimony {
+	.owl-controls .owl-nav [class*=owl-] {
+	    color: $color_1;
+	    font-size: 14px;
+	    margin: 5px;
+	    background: transparent;
+	    display: inline-block;
+	    cursor: pointer;
+	    @include border-radius(50%);
+		width: 40px;
+		height: 40px;
+	    border: 3px solid $color_1;
+        padding-top: 7px;
+	    &:hover {
+	    	background: transparent;
+		    color: $color_2;
+		    border-color: $color_2;
+		    text-decoration: none;
+		}
+	}
+	.owl-nav{
+		position: relative;
+		z-index: 2;
+		.owl-prev,
+		.owl-next{
+			position: absolute;
+			top: -180px;
+		}
+		.owl-prev{
+			left: -70px;
+		}
+		.owl-next{
+			right: -70px;
+		}
+	}
+
 }
 
 .bg-dark{
